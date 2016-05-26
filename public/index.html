@@ -1,0 +1,394 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="myApp">
+<head>
+	<meta charset="utf-8">
+	<title>Tiffins</title>
+	<meta http-equiv="X-UA-Compatible" content="IE=Edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="keywords" content="">
+	<meta name="description" content="">
+<!--
+
+Template 2075 Digital Team
+
+http://www.tooplate.com/view/2075-digital-team
+
+
+-->
+      <title>Login and Registration Form with HTML5 and CSS3</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+        <meta name="description" content="Login and Registration Form with HTML5 and CSS3" />
+        <meta name="keywords" content="html5, css3, form, switch, animation, :target, pseudo-class" />
+        <meta name="author" content="Codrops" />
+        <link rel="shortcut icon" href="../favicon.ico"> 
+        <link rel="stylesheet" type="text/css" href="css/demo.css" />
+        <link rel="stylesheet" type="text/css" href="css/style.css" />
+		<link rel="stylesheet" type="text/css" href="css/animate-custom.css" />
+
+	<link rel="stylesheet" href="css/bootstrap.min.css">
+	<link rel="stylesheet" href="css/font-awesome.min.css">
+	<link rel="stylesheet" href="css/animate.min.css">
+	<link rel="stylesheet" href="css/et-line-font.css">
+	<link rel="stylesheet" href="css/nivo-lightbox.css">
+	<link rel="stylesheet" href="css/nivo_themes/default/default.css">
+	<link rel="stylesheet" href="css/style.css">
+	<link href='https://fonts.googleapis.com/css?family=Roboto:400,300,500' rel='stylesheet' type='text/css'>
+</head>
+<body 
+<div class="container">
+            <!-- Codrops top bar -->
+            <div class="codrops-top">
+                <a href="">
+                    <strong>&laquo; Previous Demo: </strong>Responsive Content Navigator
+                </a>
+                <span class="right">
+                    <a href=" http://tympanus.net/codrops/2012/03/27/login-and-registration-form-with-html5-and-css3/">
+                        <strong>Back to the Codrops Article</strong>
+                    </a>
+                </span>
+                <div class="clr"></div>
+            </div><!--/ Codrops top bar -->
+            <header>
+                <h1>Login and Registration Form <span>with HTML5 and CSS3</span></h1>
+				<nav class="codrops-demos">
+					<span>Click <strong>"Join us"</strong> to see the form switch</span>
+					<a href="index.html" class="current-demo">Demo 1</a>
+					<a href="index2.html">Demo 2</a>
+					<a href="index3.html">Demo 3</a>
+				</nav>
+            </header>
+            <section>				
+                <div id="container_demo" >
+                    <!-- hidden anchor to stop jump http://www.css3create.com/Astuce-Empecher-le-scroll-avec-l-utilisation-de-target#wrap4  -->
+                    <a class="hiddenanchor" id="toregister"></a>
+                    <a class="hiddenanchor" id="tologin"></a>
+                    <div id="wrapper">
+                        <div id="login" class="animate form">
+                            <form  action="mysuperscript.php" autocomplete="on"> 
+                                <h1>Log in</h1> 
+                                <p> 
+                                    <label for="username" class="uname" data-icon="u" > Your email or username </label>
+                                    <input id="username" name="username" required="required" type="text" placeholder="myusername or mymail@mail.com"/>
+                                </p>
+                                <p> 
+                                    <label for="password" class="youpasswd" data-icon="p"> Your password </label>
+                                    <input id="password" name="password" required="required" type="password" placeholder="eg. X8df!90EO" /> 
+                                </p>
+                                <p class="keeplogin"> 
+									<input type="checkbox" name="loginkeeping" id="loginkeeping" value="loginkeeping" /> 
+									<label for="loginkeeping">Keep me logged in</label>
+								</p>
+                                <p class="login button"> 
+                                    <input type="submit" value="Login" /> 
+								</p>
+                                <p class="change_link">
+									Not a member yet ?
+									<a href="#toregister" class="to_register">Join us</a>
+								</p>
+                            </form>
+                        </div>
+
+                        <div id="register" class="animate form">
+                            <form  action="mysuperscript.php" autocomplete="on"> 
+                                <h1> Sign up </h1> 
+                                <p> 
+                                    <label for="usernamesignup" class="uname" data-icon="u">Your username</label>
+                                    <input id="usernamesignup" name="usernamesignup" required="required" type="text" placeholder="mysuperusername690" />
+                                </p>
+                                <p> 
+                                    <label for="emailsignup" class="youmail" data-icon="e" > Your email</label>
+                                    <input id="emailsignup" name="emailsignup" required="required" type="email" placeholder="mysupermail@mail.com"/> 
+                                </p>
+                                <p> 
+                                    <label for="passwordsignup" class="youpasswd" data-icon="p">Your password </label>
+                                    <input id="passwordsignup" name="passwordsignup" required="required" type="password" placeholder="eg. X8df!90EO"/>
+                                </p>
+                                <p> 
+                                    <label for="passwordsignup_confirm" class="youpasswd" data-icon="p">Please confirm your password </label>
+                                    <input id="passwordsignup_confirm" name="passwordsignup_confirm" required="required" type="password" placeholder="eg. X8df!90EO"/>
+                                </p>
+                                <p class="signin button"> 
+									<input type="submit" value="Sign up"/> 
+								</p>
+                                <p class="change_link">  
+									Already a member ?
+									<a href="#tologin" class="to_register"> Go and log in </a>
+								</p>
+                            </form>
+                        </div>
+						
+                    </div>
+                </div>  
+            </section>
+        </div>
+
+data-spy="scroll" data-target=".navbar-collapse" data-offset="50" ng-controller="AppCtrl">
+
+<!-- preloader section -->
+<div class="preloader">
+	<div class="sk-spinner sk-spinner-circle">
+       <div class="sk-circle1 sk-circle"></div>
+       <div class="sk-circle2 sk-circle"></div>
+       <div class="sk-circle3 sk-circle"></div>
+       <div class="sk-circle4 sk-circle"></div>
+       <div class="sk-circle5 sk-circle"></div>
+       <div class="sk-circle6 sk-circle"></div>
+       <div class="sk-circle7 sk-circle"></div>
+       <div class="sk-circle8 sk-circle"></div>
+       <div class="sk-circle9 sk-circle"></div>
+       <div class="sk-circle10 sk-circle"></div>
+       <div class="sk-circle11 sk-circle"></div>
+       <div class="sk-circle12 sk-circle"></div>
+    </div>
+</div>
+
+<!-- navigation section -->
+<section class="navbar navbar-fixed-top custom-navbar" style="background-color:rgba(0,0,0,0.5);
+    text-shadow: 1px 1px 1px black;" role="navigation">
+	<div class="container">
+		<div class="navbar-header">
+			<button class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+				<span class="icon icon-bar"></span>
+				<span class="icon icon-bar"></span>
+				<span class="icon icon-bar"></span>
+			</button>
+			<a href="#" class="navbar-brand">Tiffin Service</a>
+		</div>
+		<div class="collapse navbar-collapse">
+			<ul class="nav navbar-nav navbar-right">
+				<li><a href="#home" class="smoothScroll">HOME</a></li>
+				<li><a href="#about" class="smoothScroll">ABOUT</a></li>
+				<li><a href="#pricing" class="smoothScroll">PLANS</a></li>
+				<li><a href="#contact" class="smoothScroll">ORDERS</a></li>
+			</ul>
+		</div>
+	</div>
+</section>
+
+<!-- home section -->
+<section id="home">
+	<div class="container">
+		<div class="row">
+			<div class="col-md-3 col-sm-3" ></div> <div class="col-md-6 col-sm-6" style="background-color:rgba(0,0,0,0.5); padding-bottom:20px;">
+				<h3>BEST FOOD / PURE VEG / ADVANCE COUPONS</h3>
+				<h1>WORM FOOD SERVES</h1>
+				<hr>
+				<a href="#work" class="smoothScroll btn btn-danger" style="
+    text-shadow: 1px 1px 1px black;">Know about us</a>
+				<a href="#pricing" class="smoothScroll btn btn-default" style="
+    text-shadow: 1px 1px 1px black;">See our plans</a>
+			</div>
+		</div>
+	</div>
+</section>
+
+<!-- work section -->
+<section id="work">
+	<div class="container">
+		<div class="row">
+			<div class="col-md-12 col-sm-12">
+				<div class="section-title">
+					<strong>01</strong>
+					<h1 class="heading bold">WHAT WE DO</h1>
+					<hr>
+				</div>
+			</div>
+			<div class="col-lg-4 col-md-4 col-sm-4 wow fadeInUp" data-wow-delay="0.6s">
+				<i class="icon-cloud medium-icon"></i>
+					<h3>HOME DELIVERY</h3>
+					<hr>
+					<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam velit elit, sodales nec ligula blandit, porta ultrices purus.</p>
+			</div>
+			<div class="col-lg-4 col-md-4 col-sm-4 wow fadeInUp" data-wow-delay="0.9s">
+				<i class="icon-mobile medium-icon"></i>
+					<h3>24 HOURS SERVICE</h3>
+					<hr>
+					<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam velit elit, sodales nec ligula blandit, porta ultrices purus.</p>
+			</div>
+			<div class="col-lg-4 col-md-4 col-sm-4 wow fadeInUp" data-wow-delay="1s">
+				<i class="icon-laptop medium-icon"></i>
+					<h3>AT YOUR DOOR </h3>
+					<hr>
+					<P>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam velit elit, sodales nec ligula blandit, porta ultrices purus.</P>
+				</div>
+			<div class="col-lg-4 col-md-4 col-sm-4 wow fadeInUp" data-wow-delay="1s">
+				<i class="icon-compass medium-icon"></i>
+					<h3>IN TOUCH WHILE REACHING TO YOU</h3>
+					<hr>
+					<P>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam velit elit, sodales nec ligula blandit, porta ultrices purus.</P>
+					</div>
+			<div class="col-lg-4 col-md-4 col-sm-4 wow fadeInUp" data-wow-delay="1s">
+				<i class="icon-chat medium-icon"></i>
+					<h3>SOCIAL MEDIA</h3>
+					<hr>
+					<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam velit elit, sodales nec ligula blandit, porta ultrices purus.</p>
+			</div>
+			<div class="col-lg-4 col-md-4 col-sm-4 wow fadeInUp" data-wow-delay="1s">
+				<i class="icon-browser medium-icon"></i>
+					<h3>HOME LIKE FOOD</h3>
+					<hr>
+					<P>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam velit elit, sodales nec ligula blandit, porta ultrices purus.</P>
+						</div>
+		</div>
+	</div>
+</section>
+
+<!-- about section -->
+<section id="about">
+	<div class="container">
+		<div class="row">
+			<div class="col-md-12 col-sm-12 text-center">
+				<div class="section-title">
+					<strong>02</strong>
+					<h1 class="heading bold">ABOUT US</h1>
+					<hr>
+				</div>
+			</div>
+			<div class="col-md-6 col-sm-12">
+				<img src="images/about-img.jpg" class="img-responsive" alt="about img">
+			</div>
+			<div class="col-md-6 col-sm-12">
+				<h3 class="bold">WHO ARE WE?</h3>
+				<h1 class="heading bold">The Best Tiffin Service In Region</h1>
+				<!-- Nav tabs -->
+				<ul class="nav nav-tabs" role="tablist">
+					<li ng-repeat="description in description" class="{{description.active}}"><a href="#{{description._id}}" aria-controls="design" role="tab" data-toggle="tab" >{{description.title}}</a></li>
+
+				</ul>
+				<!-- tab panes -->
+				<div class="tab-content" >
+					<div  ng-repeat="description in description"  role="tabpanel" class="tab-pane {{description.active}}"  id="{{description._id}}">
+						<p>{{description.content}}</p>
+					</div>
+
+
+				</div>
+			</div>
+		</div>
+	</div>
+</section>
+
+
+
+<!-- pricing section -->
+<section id="pricing">
+	<div class="container">
+		<div class="row">
+			<div class="col-md-12 col-sm-12 text-center">
+				<div class="section-title">
+					<strong>03</strong>
+					<h1 class="heading bold">OUR PRICING</h1>
+					<hr>
+				</div>
+			</div>
+			<div class="col-md-4 col-sm-6" ng-repeat="pricing in pricing">
+				<div class="plan plan-one wow bounceIn" data-wow-delay="0.3s">
+					<div class="plan_title">
+						<i class="icon-mobile medium-icon"></i>
+						<h3>{{pricing.plan}}</h3>
+						<h2>${{pricing.price}} <span>per year</span></h2>
+					</div>
+					<ul>
+                    	<li><h3>{{pricing.deliver}}</h3></li>
+
+					</ul>
+					<a href="#contact" class="btn btn-warning">ORDER NOW</a>
+				</div>
+			</div>
+
+			</div>
+		</div>
+	</div>
+</section>
+
+
+
+<!-- contact section -->
+<section id="contact">
+	<div class="container">
+		<div class="row">
+			<div class="col-md-12 col-sm-12 text-center">
+				<div class="section-title">
+					<strong>04</strong>
+					<h1 class="heading bold">PLACE AN ORDER</h1>
+					<hr>
+				</div>
+			</div>
+			<div class="col-md-6 col-sm-12 contact-info">
+				<h2 class="heading bold">CONTACT INFO</h2>
+				<p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteu sunt in culpa qui officia deserunt mollit anim id.</p>
+				<div class="col-md-6 col-sm-4">
+					<h3><i class="icon-envelope medium-icon wow bounceIn" data-wow-delay="0.6s"></i> EMAIL</h3>
+					<p>hello@company.com</p>
+				</div>
+				<div class="col-md-6 col-sm-4">
+					<h3><i class="icon-phone medium-icon wow bounceIn" data-wow-delay="0.6s"></i> PHONES</h3>
+					<p>010-020-0340 | 090-080-0760</p>
+				</div>
+			</div>
+			<div class="col-md-6 col-sm-12">
+				<form action="#" method="get" class="wow fadeInUp" data-wow-delay="0.6s">
+					<div class="col-md-6 col-sm-6">
+						<input type="text" class="form-control" placeholder="Name" name="name">
+					</div>
+					<div class="col-md-6 col-sm-6">
+						<input type="text" class="form-control" placeholder="Phone" name="phone">
+					</div>
+					<div class="col-md-12 col-sm-12">
+						<input type="email" class="form-control" placeholder="Email" name="email">
+					</div>
+
+					<div class="col-md-12 col-sm-12">
+						<textarea class="form-control" placeholder="Address" rows="4" name="address"></textarea>
+					</div>
+					<div class="col-md-12 col-sm-12">
+					<select class="form-control">
+						<option>One time</option>
+						<option>Two time</option>
+						<option>Three time</option>
+					</select>
+				</div>
+					<div class="col-md-offset-4 col-md-8 col-sm-offset-4 col-sm-8" >
+						<input type="submit" class="form-control " value="ORDER NOW">
+					</div>
+				</form>
+			</div>
+		</div>
+	</div>
+</section>
+
+
+
+<!-- footer section -->
+<footer>
+	<div class="container">
+		<div class="row">
+			<div class="col-md-12 col-sm-12">
+				<p>Copyright © tiffins</p>
+				<hr>
+				<ul class="social-icon">
+					<li><a href="#" class="fa fa-facebook wow fadeIn" data-wow-delay="0.3s"></a></li>
+					<li><a href="#" class="fa fa-twitter wow fadeIn" data-wow-delay="0.6s"></a></li>
+					<li><a href="#" class="fa fa-dribbble wow fadeIn" data-wow-delay="0.9s"></a></li>
+					<li><a href="#" class="fa fa-behance wow fadeIn" data-wow-delay="0.9s"></a></li>
+					<li><a href="#" class="fa fa-tumblr wow fadeIn" data-wow-delay="0.9s"></a></li>
+				</ul>
+			</div>
+		</div>
+	</div>
+</footer>
+
+
+<script src="js/jquery.js"></script>
+<script src="js/bootstrap.min.js"></script>
+<script src="js/smoothscroll.js"></script>
+<script src="js/isotope.js"></script>
+<script src="js/imagesloaded.min.js"></script>
+<script src="js/nivo-lightbox.min.js"></script>
+<script src="js/jquery.backstretch.min.js"></script>
+<script src="js/wow.min.js"></script>
+<script src="js/custom.js"></script>
+<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.5/angular.min.js"></script>
+<script type="text/javascript" src="/controllers/controller.js"></script>
+</body>
+</html>
